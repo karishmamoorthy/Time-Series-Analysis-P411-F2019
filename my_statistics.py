@@ -100,7 +100,7 @@ def confidence_symm(percentage, distribution=gaussian_curve, this_sample_mean=0,
     area = 0
     
     z = negative_infinity
-    area += dx*distribution(z_alpha_by_2)
+    area += dx*distribution(z)
     
     while area < alpha/2:
         z += dx
